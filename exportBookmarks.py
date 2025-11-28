@@ -17,7 +17,7 @@ for user in allUsers :
     contentDirectory=os.listdir(fullProfilePath)
     
     for filename in contentDirectory :
-        if 'default-esr' in filename :
+        if 'default' in filename :
             databasePath = fullProfilePath+filename+"\\places.sqlite"
 
             conn = sqlite3.connect(databasePath)
@@ -60,7 +60,6 @@ for user in allUsers :
                 jsonStruct["roots"]["bookmark_bar"]["children"].append(element)
 
             exportedBookmarks = json.dumps(jsonStruct)
-            print(exportedBookmarks)
             edgeBookmarkPath="C:/Users/"+user+"/AppData/Local/Microsoft/Edge/User Data/Default"         #PATH of the converted bookmarks file for Edge (Windows 11)
             if not os.path.exists(edgeBookmarkPath):
                 os.makedirs(edgeBookmarkPath)
