@@ -65,7 +65,7 @@ for user in allUsers :
                 os.makedirs(edgeBookmarkPath)
             with open(edgeBookmarkPath+'/Bookmarks', 'w') as infile:
                 file = infile.write(exportedBookmarks)
-            print("[+]"+user+" bookmarks successfully exported")
+            print("[+]"+user+" bookmarks successfully exported in "+edgeBookmarkPath)
 
 
 print("[+] script executed successfully")
