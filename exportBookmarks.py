@@ -5,9 +5,9 @@ import os
 # This script scans all Windows user directories, finds Firefox bookmark databases,
 # extracts the bookmarks, converts them into Microsoft Edge's JSON bookmark format,
 # and saves them into the Edge profile directory.
-# ⚠ Please note that this script does not take into account Firefox's multi-profile management.
+# Please note that this script does not take into account Firefox's multi-profile management.
 
-userProfile = 'default' # ⚠ if there is an error, change 'default' to 'default-esr'
+userProfile = 'default' # if there is an error, change 'default' to 'default-esr'
 basePath = "C:\\Users\\"
 
 # List all user folders under C:\Users\
@@ -31,7 +31,7 @@ for user in allUsers:
         if userProfile in filename:
             databasePath = fullProfilePath + filename + "\\places.sqlite"
 
-            # Connect to Firefox’s bookmarks database
+            # Connect to Firefox's bookmarks database
             conn = sqlite3.connect(databasePath)
             cur = conn.cursor()
 
