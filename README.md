@@ -14,7 +14,7 @@ It scans all user profiles, reads Firefox’s places.sqlite, and writes a compat
 
 Copy the script to a Windows machine where Firefox (Windows 7) data is present.
 
-Run the script with Python 3 (tested with python 3.5).
+Run the script with Python 3 (tested with [python 3.5](https://www.python.org/downloads/release/python-350/), if you encounter problems installing Python 3.5 on Windows 7 [update the C runtime](https://support.microsoft.com/en-us/topic/update-for-universal-c-runtime-in-windows-c0514201-7fe6-95a3-b0a5-287930f3560c)).
 
 ```cmd
 .\exportBookmarks.py
