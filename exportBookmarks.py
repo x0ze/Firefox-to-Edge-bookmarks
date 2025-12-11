@@ -7,7 +7,7 @@ import os
 # and saves them into the Edge profile directory.
 # Please note that this script does not take into account Firefox's multi-profile management.
 
-userProfile = 'default' # if there is an error, change 'default' to 'default-esr'
+userProfile = 'default-esr' # if there is an error, change 'default-esr' to 'default'
 basePath = "C:\\Users\\"
 
 # List all user folders under C:\Users\
