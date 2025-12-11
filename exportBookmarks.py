@@ -26,7 +26,7 @@ for user in allUsers:
     contentDirectory = os.listdir(fullProfilePath)
 
     for filename in contentDirectory:
-        # Target the default Firefox profile (usually contains 'default' in the name)
+        # Target the default Firefox profile (its name usually contains "default"; if there is an error, change default to "default-esr").
         if 'default' in filename:
             databasePath = fullProfilePath + filename + "\\places.sqlite"
 
