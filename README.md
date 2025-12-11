@@ -25,7 +25,7 @@ The converted bookmarks will be written to:
 # Common issues
 Some problems may occur with this script. There are few checks, so it is possible that no errors will be displayed but no bookmarks will be exported.
 
-- Multiple default profiles : change the `userProfile` variable in line 10 of the script to `default-esr` (because there are several default profiles, so a profile may be empty).
+- Multiple default profiles : change the `userProfile` variable in line 10 of the script to `default` (because there are several default profiles, so a profile may be empty).
 - Multi-profile Firefox setups are not handled.
 - Insufficient user rights: run the script with administrator rights to access all users.
 
