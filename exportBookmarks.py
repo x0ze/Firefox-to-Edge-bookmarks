@@ -7,6 +7,7 @@ import os
 # and saves them into the Edge profile directory.
 # ⚠ Please note that this script does not take into account Firefox's multi-profile management.
 
+userProfile = 'default' # ⚠ if there is an error, change 'default' to 'default-esr'
 basePath = "C:\\Users\\"
 
 # List all user folders under C:\Users\
@@ -26,8 +27,8 @@ for user in allUsers:
     contentDirectory = os.listdir(fullProfilePath)
 
     for filename in contentDirectory:
-        # Target the default Firefox profile (its name usually contains "default"; if there is an error, change default to "default-esr").
-        if 'default' in filename:
+        # Target the default Firefox profile (its name usually contains "default").
+        if userProfile in filename:
             databasePath = fullProfilePath + filename + "\\places.sqlite"
 
             # Connect to Firefox’s bookmarks database
