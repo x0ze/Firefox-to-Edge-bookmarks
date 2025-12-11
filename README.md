@@ -27,6 +27,6 @@ Some problems may occur with this script. There are few checks, so it is possibl
 
 - Multiple default profiles : change the `userProfile` variable in line 10 of the script to `default-esr` (because there are several default profiles, so a profile may be empty).
 - Multi-profile Firefox setups are not handled.
-- Insufficient user rights : run the script with appropriate permissions to access all user folders.
+- Insufficient user rights: run the script with administrator rights to access all users.
 
 
